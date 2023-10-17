@@ -30,6 +30,12 @@ To install or upgrade the script, run:
 sudo wget -O /usr/local/bin/merge_ln https://raw.githubusercontent.com/tanganke/merge_ln/main/merge_ln.sh && sudo chmod +x /usr/local/bin/merge_ln
 ```
 
+Regarding the internet in Mainland China (对于大陆的网络), try
+
+```bash
+sudo wget -O /usr/local/bin/merge_ln https://gitee.com/tanganke/merge_ln/raw/main/merge_ln.sh && sudo chmod +x /usr/local/bin/merge_ln
+```
+
 ## Uninstallation
 
 To uninstall the script, run:
