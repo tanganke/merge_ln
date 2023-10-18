@@ -26,6 +26,5 @@ if [ -f "$1" ] && [ -f "$2" ]; then
 elif [ -d "$1" ] && [ -d "$2" ]; then
     merge_directories "$1" "$2"
 else
-    echo "Usage: merge_ln file1 file2 OR merge_ln dir1 dir2"
-    
+    echo "Usage: merge_ln file1 file2 OR merge_ln dir1 dir2"  
 fi

@@ -61,3 +61,47 @@ However, it also means that *changes to one file will affect the other file, sin
 
 Note that the script does not handle symbolic links or other types of files. It also does not handle cases
 where the same file name appears in both directories but the files are different.
+
+
+## Test
+
+To test the script, run:
+
+```bash
+# create test files
+dd if=/dev/urandom of=file1 bs=1M count=1000
+
+# copy test files
+cp file1 file2
+
+# merge test files
+merge_ln file1 file2
+```
+
+To test the script on directories, run:
+
+```bash
+# create test directories
+mkdir dir1
+
+# create test files in test directories
+dd if=/dev/urandom of=dir1/file1 bs=1M count=10
+dd if=/dev/urandom of=dir1/file2 bs=1M count=10
+
+# copy test directories
+cp -r dir1 dir2
+
+# merge test directories
+merge_ln dir1 dir2
+```
+
+## C Program Version
+
+to build the C program, run:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
